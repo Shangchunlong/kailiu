@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+	PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.jnmd.liuwan.mapper.admin.BusCompanyMapper">
+	<!-- 增加巴士公司信息 -->
+	<insert id="saveBusCompany">
+		<selectKey keyColumn="company_id" keyProperty="company_id" order="AFTER" resultType="int">
+			select @@identity as company_id
+		</selectKey>
+		insert into buscompany(cid,company_name,company_add,company_msg,company_pic) 
+		values(#{cid},#{company_name},#{company_add},#{company_msg},#{company_pic})
+	</insert> 
+	<!-- 查询巴士公司信息 -->
+	<select id="getBusCompany" resultType="BusCompany">
+		select  company_id,cid,company_name,company_add,company_msg,company_pic from buscompany
+	</select>
+	<select id="getBusCompanyId" resultType="BusCompany">
+		select  company_id,cid,company_name,company_add,company_msg,company_pic from buscompany
+		where company_id= #{company_id}
+	</select>
+	<!-- 删除巴士公司信息 -->
+	<delete id="delBusCompany">
+		delete from buscompany where company_id= #{company_id}
+	</delete>
+	<!-- 更新巴士公司信息 -->
+
+	<update id="updateBusCompany" >
+		update buscompany 
+		<set>
+			<if test="cid!=null">cid=#{cid}</if>
+			<if test="company_name!=null">,company_name = #{company_name}</if>
+			<if test="company_add!=null">,company_add = #{company_add}</if>
+			<if test="company_msg!=null">,company_msg = #{company_msg}</if>
+			<if test="company_pic!=null">,company_pic = #{company_pic }</if>
+		</set>
+		where company_id= #{company_id }
+	</update>
+	
+</mapper>
+	

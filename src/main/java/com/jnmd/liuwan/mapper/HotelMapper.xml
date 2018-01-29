@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+	PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.jnmd.liuwan.mapper.HotelMapper">
+
+	
+	<select id="getRecommendHotels" resultMap="HotelMap">
+		select * from hotel_msg,hotel_pic where hotel_msg.hid = hotel_pic.hid  limit 5
+	</select>
+	
+	
+	<resultMap type="com.jnmd.liuwan.domain.Hotel" id="HotelMapLiang">
+		<id property="hid" column="hid"/>
+		<result property="name" column="name"/>
+		<result property="contact" column="contact"/>
+		<result property="address" column="address"/>
+		<result property="feature" column="feature"/>
+		<result property="level" column="level"/>
+		<result property="serverDesc" column="serverDesc"/>
+		<result property="intime" column="intime"/>
+		<result property="outtime" column="outtime"/>
+		<result property="detailsaddress" column="detailsaddress"/>
+		<collection property="hotelPics" javaType="java.util.List" ofType="com.jnmd.liuwan.domain.HotelPic">
+   			<id property="pid" column="pid"/>
+   			<result property="picPath" column="picPath"/>
+   		</collection>
+	</resultMap>
+	<select id="getHotel" resultMap="HotelMapLiang">
+		select *
+		from 
+			hotel_msg ,hotel_pic
+		where
+			hotel_msg.hid=#{hid}
+		and
+			hotel_msg.hid=hotel_pic.hid
+	</select>
+	
+     <resultMap type="com.jnmd.liuwan.domain.HotelPrice" id="houseList">
+     	<id property="hpid" column="hpid"/>
+   		<result property="price" column="price"/>
+   		<result property="beforeprice" column="beforeprice"/>
+   		<result property="area" column="area"/>
+   		<result property="floor" column="floor"/>
+   		<result property="smoke" column="smoke"/>
+   		<result property="peomax" column="peomax"/>
+   		<association property="houseType" javaType="com.jnmd.liuwan.domain.HouseType">
+   			<id property="houseId" column="houseId"/>
+   			<result property="houseType" column="houseType"/>
+   		</association>
+   		<association property="province" javaType="com.jnmd.liuwan.domain.Province">
+   			<id property="cityId" column="cityid"/>
+   			<result property="cityName" column="cityname"/>
+   		</association>
+   		<collection property="housePic" javaType="java.util.List" ofType="com.jnmd.liuwan.domain.HousePic">
+   			<id property="hpid" column="hpid"/>
+   			<result property="picPath" column="picPath"/>
+   		</collection>
+     </resultMap>
+     <select id="getHotelMsg" parameterType="Map" resultMap="houseList">
+     	select *
+     	from 
+     	hotel_price p,house_type t, house_pic c,province pr
+     	where
+     	p.hpid in (
+     		select m.pid from
+     		hotel_mid m
+     		where m.hid = #{hid}
+     	)
+     	and p.house_id = t.houseId
+     	and p.hpid = c.housepid
+     	and p.city_id = pr.cityId
+     </select>
+
+	<!-- **************************************************** -->
+	<select id="getHotels" resultType="com.jnmd.liuwan.domain.Hotel">
+		select hid,name,contact,address,feature,level,serverDesc,detailsaddress
+		from hotel_msg
+		<where>
+			<if test="address!=null and address=='全部'">
+			</if>
+			<if test="address!=null and address!='全部'">
+				and address=#{address}
+			</if>
+		</where>
+	</select> 
+	<select id="getHotelPics" resultType="HotelPic">
+		select pid,picpath picPath,hid
+		from hotel_pic
+		where hid=#{hid}
+	</select>
+	<resultMap type="HotelMid" id="HotelMidMap">
+		<id column="mid" property="mid"/>
+		<collection property="hotelPrice" javaType="arraylist" ofType="HotelPrice" autoMapping="true">
+			<id column="hpid" property="hpid"/>
+			<result property="price" column="price"/>
+	   		<result property="beforeprice" column="beforeprice"/>
+	   		<result property="area" column="area"/>
+	   		<result property="floor" column="floor"/>
+	   		<result property="smoke" column="smoke"/>
+	   		<result property="peomax" column="peomax"/>
+	   		<association property="houseType" javaType="com.jnmd.liuwan.domain.HouseType">
+	   			<id property="houseId" column="houseId"/>
+	   			<result property="houseType" column="houseType"/>
+	   		</association>
+	   		<association property="province" javaType="com.jnmd.liuwan.domain.Province">
+	   			<id property="cityId" column="cityid"/>
+	   			<result property="cityName" column="cityname"/>
+	   		</association>
+	   		<collection property="housePic" javaType="java.util.List" ofType="com.jnmd.liuwan.domain.HousePic">
+	   			<id property="hpid" column="hpid"/>
+	   			<result property="picPath" column="picPath"/>
+	   		</collection>
+		</collection>
+	</resultMap>
+	
+	<select id="getHotelMids" resultMap="HotelMidMap">
+     	select 
+	     	hm.mid,hm.pid,
+	     	hp.hpid,hp.price,hp.area,hp.floor,hp.smoke,hp.peomax,hp.beforeprice,
+	     	ht.houseId,ht.houseType,
+	     	p.cityid,p.cityname,
+	     	hpic.hpid,hpic.picPath,hpic.housepid
+     	from 
+     		hotel_mid hm
+     	join 
+     		hotel_price hp
+     	on 
+     		hm.pid=hp.hpid
+     	left join 
+     		house_type ht
+     	on 
+     		hp.house_id=ht.houseId
+     	left join 
+     		province p
+     	on 
+     		hp.city_id=p.cityid
+     	left join 
+     		house_pic hpic
+     	on 
+     		hp.hpid=hpic.hpid
+     	<where>
+     		hm.hid=#{hid}
+     		
+     		<if test="price!=null and price==0">
+     		</if>
+     		<if test="price!=null and price==1">
+     			and hp.price&lt;300
+     		</if>
+     		<if test="price!=null and price==2">
+     			and hp.price between 300 and 500
+     		</if>
+     		<if test="price!=null and price==3">
+     			and hp.price between 500 and 1000
+     		</if>
+     		<if test="price!=null and price==4">
+     			and hp.price between 1000 and 1200
+     		</if>
+     		<if test="price!=null and price==5">
+     			and hp.price>1200
+     		</if>
+     		
+     		<if test="houseType!=null and houseType=='全部'">
+     		</if>
+     		<if test="houseType!=null and houseType!='全部'">
+     			and ht.houseType=#{houseType}
+     		</if>
+     	</where>
+     	limit 2
+     </select>
+	<!-- ******************************************************* -->
+	<resultMap type="Hotel" id="HotelMap" >
+		<id column="hid" property="hid"/>
+		<result column="name" property="name"/>
+		<result column="contact" property="contact"/>
+		<result column="detailsaddress" property="detailsaddress"/>
+		<result column="feature" property="feature"/>
+		<result column="level" property="level"/>
+		<result column="serverDesc" property="serverDesc"/>
+		<collection property="hotelMids" javaType="arraylist" ofType="HotelMid" autoMapping="true" >
+			<id column="mid" property="mid"/>
+			<collection property="hotelPrice" javaType="arraylist" ofType="HotelPrice" autoMapping="true">
+				<id column="hpid" property="hpid"/>
+				<result property="price" column="price"/>
+		   		<result property="beforeprice" column="beforeprice"/>
+		   		<result property="area" column="area"/>
+		   		<result property="floor" column="floor"/>
+		   		<result property="smoke" column="smoke"/>
+		   		<result property="peomax" column="peomax"/>
+		   		<association property="houseType" javaType="com.jnmd.liuwan.domain.HouseType">
+		   			<id property="houseId" column="houseId"/>
+		   			<result property="houseType" column="houseType"/>
+		   		</association>
+		   		<association property="province" javaType="com.jnmd.liuwan.domain.Province">
+		   			<id property="cityId" column="cityid"/>
+		   			<result property="cityName" column="cityname"/>
+		   		</association>
+		   		<collection property="housePic" javaType="java.util.List" ofType="com.jnmd.liuwan.domain.HousePic">
+		   			<id property="hpid" column="hpid"/>
+		   			<result property="picPath" column="picPath"/>
+		   		</collection>
+			</collection>
+		</collection>
+		<collection property="hotelPics" javaType="arraylist" ofType="com.jnmd.liuwan.domain.HotelPic" autoMapping="true">
+			<id column="pid" property="pid"/>
+			<result column="picpath" property="picPath"/>
+		</collection>
+	</resultMap>
+	
+	
+	<select id="getHotelTotalCount" resultType="int">
+		select
+			count(distinct h.hid)
+     	from
+     		hotel_msg h
+     	join 
+     		hotel_mid hm
+     	on
+     		h.hid=hm.hid
+     	join 
+     		hotel_price hp
+     	on 
+     		hm.pid=hp.hpid
+     	left join 
+     		house_type ht
+     	on 
+     		hp.house_id=ht.houseId
+     	left join 
+     		province p
+     	on 
+     		hp.city_id=p.cityid
+     	left join 
+     		house_pic hpic
+     	on 
+     		hp.hpid=hpic.hpid
+     	left join
+     		hotel_pic htp
+     	on
+     		h.hid=htp.hid
+     	<where>
+     		<if test="address!=null and address=='全部'">
+			</if>
+			<if test="address!=null and address!='全部'">
+				and address=#{address}
+			</if>
+     		<if test="price!=null and price==0">
+     		</if>
+     		<if test="price!=null and price==1">
+     			and hp.price&lt;300
+     		</if>
+     		<if test="price!=null and price==2">
+     			and hp.price between 300 and 500
+     		</if>
+     		<if test="price!=null and price==3">
+     			and hp.price between 500 and 1000
+     		</if>
+     		<if test="price!=null and price==4">
+     			and hp.price between 1000 and 1200
+     		</if>
+     		<if test="price!=null and price==5">
+     			and hp.price>1200
+     		</if>
+     		
+     		<if test="houseType!=null and houseType=='全部'">
+     		</if>
+     		<if test="houseType!=null and houseType!='全部'">
+     			and ht.houseType=#{houseType}
+     		</if>
+     	</where>
+	</select>
+	
+<!-- 			count(h.hid),h.name,h.contact,h.address,h.feature,h.level,h.serverDesc,
+	     	hm.mid,hm.pid,
+	     	hp.hpid,hp.price,hp.area,hp.floor,hp.smoke,hp.peomax,
+	     	ht.houseId,ht.houseType,
+	     	p.cityid,p.cityname,
+	     	hpic.hpid,hpic.picPath,hpic.housepid,
+	     	htp.pid,htp.picpath -->
+	<select id="getHouseCount" resultType="int">
+		select
+			count(h.hid)
+     	from
+     		hotel_msg h
+     	join 
+     		hotel_mid hm
+     	on
+     		h.hid=hm.hid
+     	join 
+     		hotel_price hp
+     	on 
+     		hm.pid=hp.hpid
+     	left join 
+     		house_type ht
+     	on 
+     		hp.house_id=ht.houseId
+     	<where>
+     		<if test="address!=null and address=='全部'">
+			</if>
+			<if test="address!=null and address!='全部'">
+				and address=#{address}
+			</if>
+     		<if test="price!=null and price==0">
+     		</if>
+     		<if test="price!=null and price==1">
+     			and hp.price&lt;300
+     		</if>
+     		<if test="price!=null and price==2">
+     			and hp.price between 300 and 500
+     		</if>
+     		<if test="price!=null and price==3">
+     			and hp.price between 500 and 1000
+     		</if>
+     		<if test="price!=null and price==4">
+     			and hp.price between 1000 and 1200
+     		</if>
+     		<if test="price!=null and price==5">
+     			and hp.price>1200
+     		</if>
+     		
+     		<if test="houseType!=null and houseType=='全部'">
+     		</if>
+     		<if test="houseType!=null and houseType!='全部'">
+     			and ht.houseType=#{houseType}
+     		</if>
+     	</where>
+	</select>
+	
+</mapper>
+
+
+
+
+
+
+
+
+
+
+
+
+

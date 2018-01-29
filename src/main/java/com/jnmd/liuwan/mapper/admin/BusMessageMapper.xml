@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+	PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.jnmd.liuwan.mapper.admin.BusMessageMapper">
+	<!-- 增加巴士信息 -->
+	<insert id="saveBusmessage">
+		<selectKey keyColumn="bus_id" keyProperty="bus_id" order="AFTER" resultType="int">
+			select @@identity as bus_id
+		</selectKey>
+		insert into busmessage(bustypename,bus_num,bus_peoplenum,bus_price,company_id,pid,bus_pic,bus_scenic,bus_discount,start_add,end_add) 
+		values(#{bustypename},#{bus_num},#{bus_peoplenum},#{bus_price},#{company_id},#{pid},#{bus_pic},#{bus_scenic},#{bus_discount},#{start_add},#{end_add})
+	</insert> 
+	<!-- 查询巴士信息 -->
+	<select id="getBusMessage" resultType="BusMessage">
+		select  bus_id,bustypename,bus_num,bus_peoplenum,bus_price,company_id,pid,end_add,start_add,bus_scenic,bus_discount,bus_pic from busmessage
+	</select>
+	<select id="getBusMessageId" resultType="BusMessage">
+		select  bus_id,bustypename,bus_num,bus_peoplenum,bus_price,company_id,pid,end_add,start_add,bus_scenic,bus_discount,bus_pic from busmessage
+		where bus_id= #{bus_id}
+	</select>
+	<!-- 删除巴士信息 -->
+	<delete id="delBusMessage">
+		delete from busmessage where bus_id= #{bus_id}
+	</delete>
+	<!-- 更新巴士信息 -->
+
+	<update id="updateBusMessage" >
+		update busmessage 
+		<set>
+			<if test="bustypename!=null">bustypename=#{bustypename}</if>
+			<if test="bus_num!=null">,bus_num = #{bus_num}</if>
+			<if test="bus_peoplenum!=null">,bus_peoplenum = #{bus_peoplenum}</if>
+			<if test="bus_price!=null">,bus_price = #{bus_price}</if>
+			<if test="company_id!=null">,company_id = #{company_id }</if>
+			<if test="pid!=null">,pid = #{pid }</if>
+			<if test="end_add!=null">,end_add = #{end_add }</if>
+			<if test="start_add!=null">,start_add = #{start_add }</if>
+			<if test="bus_discount!=null">,bus_discount = #{bus_discount }</if>
+			<if test="bus_scenic!=null">,bus_scenic = #{bus_scenic }</if>
+			<if test="bus_pic!=null">,bus_pic = #{bus_pic }</if>
+		</set>
+		where bus_id= #{bus_id }
+	</update>
+	
+</mapper>
+	

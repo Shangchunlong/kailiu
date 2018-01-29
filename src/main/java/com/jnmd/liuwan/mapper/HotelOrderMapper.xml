@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+	PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.jnmd.liuwan.mapper.HotelOrderMapper">
+	
+
+	<select id="getHotelOrder" resultType="map">
+		select ohid,hid,oid,hpid,hoteldate,begindate,enddate,hotelsum,
+		hotelguests,lasttime,countryphone,phonenumber,email,billtype,
+		billhead,omoney from hotelorder where ohid=#{ohid};
+	</select>
+	
+	<insert id="createNewOrderNumber" useGeneratedKeys="true" keyProperty="oid" parameterType="com.jnmd.liuwan.domain.OidrAndUid">  
+    	insert into horder(uid) 
+		values(#{uid}) 
+	</insert>
+	<insert id="createNewOrder" useGeneratedKeys="true" keyProperty="ohid" parameterType="com.jnmd.liuwan.domain.HOrder">  
+    	insert into hotelorder(oid, hid, hpid, hoteldate, begindate, enddate, hotelsum, hotelguests, countryphone, phonenumber, email, lasttime, billtype, billhead, omoney) 
+		values(#{oid},#{hid},#{hpid},#{hoteldate},#{begindate},#{enddate},#{hotelsum},#{hotelguests},#{countryphone},#{phonenumber},#{email},#{lasttime},#{billtype},#{billhead},#{omoney}) 
+	</insert>
+
+	<select id="findHotelmsgByHid" resultType="Hotel">
+		select 
+			hid,name,contact,address,detailsaddress,feature,level,serverDesc,intime
+		from
+			hotel_msg
+		where
+			hid=#{hid}
+	</select>
+	<select id="findhousetypeByhpid" resultType="java.util.Map">
+		 select     
+		 	houseType,price
+		 from    
+		 	hotel_price join house_type on house_id = houseid   
+		 where    
+		 	hpid=#{hpid};
+	</select>
+	<select id="findpicPathByhid" resultType="String">
+		 select     
+		 	picpath
+		 from    
+		 	hotel_pic  
+		 where    
+		 	hid=#{hid};
+	</select>
+	<select id="findOrdermsgByHid" resultType="HOrder">
+		 select     
+		 	ohid, oid, hid, hpid, hoteldate, begindate, enddate, hotelsum, hotelguests, countryphone, phonenumber, email, lasttime, billtype, billhead, omoney
+		 from    
+		 	hotelorder 
+		 where    
+		 	ohid=#{ohid};
+	</select>
+
+</mapper>

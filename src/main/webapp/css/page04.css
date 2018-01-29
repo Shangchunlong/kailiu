@@ -1,0 +1,449 @@
+
+/***************************************** bannertu *********************************/
+.banner{
+	background-color: #d2d2d2;
+	margin-top: 20px;
+}
+.banner .bannin{
+	width: 820px;
+	height: 30px;
+	margin: 0 auto;
+	background:  url(../imgs/imgs04/banner04.png) -1px -1px no-repeat;
+}
+
+
+.pos h3{
+	color: #3c3c3c;
+	font-size: 16px;
+}
+
+/********************************** 内容框内容框内容框 ********************************/
+.content{
+	width: 960px;
+	margin: 0 auto 30px;
+	overflow: hidden;
+	border: 1px solid #3c3c3c;
+	padding: 20px;
+	margin-top: 20px;
+}
+/* 标题 */
+.tittle{
+	padding-bottom: 18px;
+	border-bottom: 1px dashed #6e6e6e;	
+	margin-bottom: 20px;
+}
+.zhifufangshi{
+	font-size: 16px;
+	color: #3c3c3c;
+	margin-right: 35px;
+	font-weight: bold;
+}
+.guize{
+	font-size: 12px;
+	color: #6e6e6e;
+
+}
+/* 订单信息 */
+.biaozhundexuanze{
+	overflow: hidden;
+	padding-bottom: 20px;
+}
+.biaozhundexuanze h3{
+	font-size: 14px;
+	color: #3c3c3c;
+}
+#gaizihao{
+	font-size: 16px;
+}
+/* 购买成功后 */
+.goumaichenggonghou{
+	font-size: 12px;
+	color: #6e6e6e;
+	padding-top: 20px;
+	border-top: 1px solid #6e6e6e;
+	margin-bottom: 20px;
+}
+/* 支付方式 */
+.kaishizhifu{
+	
+	border-left: 1px solid #b5b5b5;
+	overflow: hidden;
+}
+.kaishizhifu div{
+	border-top: 1px solid #b5b5b5;
+	width: 96px;
+	height: 38px;
+	border-right: 1px solid #b5b5b5;
+	float: left;
+	text-align: center;
+	line-height: 38px;
+	font-size: 16px;
+	color: #3c3c3c;
+	font-weight: bold;
+}
+.kaishizhifu h3{
+	display: none;
+}
+.kaishizhifu .xinyongka{
+	color: white;
+	background-color: #b5b5b5;
+}
+.kaishizhifu .kuangjc{
+	display: block;
+	width:957px ;
+	border: 1px solid #b5b5b5;
+	height: 240px;
+	clear: left;
+}
+
+.tijiaodingdan{
+	float: right;
+	width: 136px;
+	height: 36px;
+	line-height: 36px;
+	text-align: center;
+	background:  url(../imgs/imgs03/tijiaodingdan_03.png) 0 0 no-repeat;
+	font-size: 16px;
+	color: #ffffff;
+	/* margin-right: 19px; */
+	margin-top: 20px;
+	display:none;
+}
+.tijiaodingdantemp{
+	display: block;
+}
+/**********************************************************/
+#ttt input{
+		display: inline;
+		
+	}
+	#ttt{
+		margin:20px;
+
+		text-align: start;
+	}
+	#ttt tr{
+				padding-top: 20px;
+	}
+	#wepaylogo{
+		float: left;
+		width: 120px;
+		height: 30px;
+		margin-top: 20px;
+		margin-left: 20px;
+		/* border: 1px solid #b5b5b5; */
+		padding:10px ;
+	}
+	#shuoming{
+		width: 140px;
+		height: 45px;
+	}
+	#erweima{
+		width: 140px;
+		height: 140px;
+		border: 1px solid #ccc;
+	}
+	#wechat{
+		float: left;
+		width: 142px;
+		height: 200px;
+		margin-top: 21px;
+		margin-left: 250px;
+
+	}
+	#feitu{
+		width: 400px;
+		height: 200px;
+	}
+	
+	/**************************支付宝手机账号支付*****************/
+#zhifuwrap{
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	width: 957px;
+	height: 240px;
+	border: 0;
+}
+#zhifuleft{
+	float: left;
+	border: 0;
+	width: 120px;
+	height: 240px;
+	background: #ccc;
+}
+#zhifuleft input{
+	margin: 20px 0 0 -33px;
+	margin-left: -9px;
+	display: inline;
+	width: 90px;
+	height: 30px;
+}
+#zhifuleft #try{
+	border: 0;
+	padding-left: 10px;
+}
+#zhifuleft img{
+	width: 40px;
+	height: 50px;
+	margin: 10px;
+}
+#zhifuright{
+	float: left;
+	width: 650px;
+	border: 0;
+	margin-left: 100px;
+}
+#zhifuright div{
+	width: 300px;
+	height: 25px;
+}
+#zfbouter{
+	width: 80px;
+	height: 100px;
+	background: #aaa;
+	position: relative;
+	margin-left: 10px;
+}
+#radio{
+	width: 0;
+	height: 0;
+	border: 5px solid #fefefe;
+	border-radius: 50%;
+	position: absolute;
+    left: 42%;
+    bottom: 4px;
+}
+#zfbinner{
+	border: 10px solid #aaa;
+	width: 60px;
+	height: 70px;
+	background: #fff;
+}
+#zhifuright #title{
+	font-size: 16px;
+	font-weight: bolder;
+	border-bottom: 2px solid #ccc;
+	position: relative;
+	margin-left: 155px;
+	position: relative;
+	text-align: left;
+	width: 300px;
+}
+#zhifuright #zfbzhuce{
+	position: absolute;
+	right: 0;
+	font-size: 14px;
+	color: #508FAF;
+	cursor: pointer;
+}
+#zhifuright .zhifubao{
+	margin-top: -6px;
+	font-size: 14px;
+	position: relative;
+	text-align: left;
+	width: 300px;
+	margin-left: 156px;
+}
+#zhifuright .zfbfforgetpassword{
+	font-size: 12px;
+	position: absolute;
+	right: 0;
+	cursor: pointer;
+	color: #508FAF;
+}
+#zhifuright input{
+	width: 300px;
+	height: 30px;
+	padding-left: 5px;
+	margin-left: 154px;
+	margin-bottom: -3px;
+	border: 1px solid #ccc;
+	margin-top: -3px;
+}
+.colorblue{
+	background: #00AEF1;
+	color: #fefefe;
+	border: 0;
+	border-radius: 5px;
+	margin: 20px 0 0 4px;
+}
+#zhuyi{
+	font-size: 12px;
+	color: #BFBFBF;
+	margin-left:-150px ;
+}
+#pass{
+	color: #955257;
+	font-weight: bold;
+}
+/*==============================支付宝扫码支付格式设置===========================  */
+#pay{
+    width: 225px;
+    height: 240px;
+    text-align: center;
+    margin-left: 193px;
+    /* margin-top: 5px; */
+    overflow: hidden;
+    position: relative;
+    border: none;
+    overflow: hidden;
+}
+#pay h1{
+	font-size: 21px;
+    color: coral;
+    height: 33px;
+    margin-top: -13px;
+    margin-left: -12px;
+}
+#pay .scan{
+	width: 150px;
+    height: 154px;
+    margin-left: 32px;
+    padding: 5px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+}
+#pay a{
+	color: #999;
+    text-decoration: underline;
+    float: left;
+    font-size: 12px;
+    margin-left: 37px;
+    margin-top: -6px;
+}
+#pay .scan .img1{
+	width: 110px;
+}
+#pay .scan .img2{
+	width: 32px;
+    height: 28px;
+    margin-left: 10px;
+    float: left;
+    margin-top: 4px;
+}
+#pay .scan .hh{
+	font-size: 12px;
+    color: #666;
+    width: 85px;
+    line-height: 18px;
+    float: left;
+    margin-left: 8px;
+    margin-top: 0px;
+}
+.kuangjc .pointer{
+	position: absolute;
+    left: 182px;
+    bottom: 115px;
+    width: 36px;
+    height: 28px;
+}
+.kuangjc .second{
+    width: 957px;
+    height: 240px;
+    position: relative; 
+    border: 0px;
+}
+.kaishizhifu .tishi{
+	width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    position: absolute;
+    left: 412px;
+    top: 22px;
+    overflow: hidden;
+}
+.kaishizhifu .littleyuanquan{
+	border: 1px solid #ccc;
+    border-radius: 6% 64% 10% 0;
+    margin-left: 38px;
+    height: 104px;
+    width: 115px;
+    background-color: darkslategray;
+    overflow: hidden;
+}
+.littleyuanquan .saoma{
+	width: 32px;
+    height: 25px;
+    margin-left: -20px;
+    margin-top: 24px;
+}
+.kaishizhifu .littleyuanquan h5{
+	color: white;
+    font-size: 15px;
+    display: block;
+    width: 67px;
+    height: 20px;
+    margin-left: 15px;
+    margin-top: -10px;
+}
+.littleyuanquan .point{
+	float: left;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 86px;
+    bottom: 50px;
+}
+
+.kaishizhifu .rightTiao{
+	float: right;
+    width: 202px;
+    background-color: #ccc;
+    overflow: hidden;
+    height: 242px;
+    overflow: hidden;
+    position: relative;
+}
+.kaishizhifu .rightTiao h1{
+	font-size: 12px;
+    color: #666;
+    margin-top: 10px;
+    height: 33px;
+}
+.kaishizhifu .rightTiao img{
+	width: 127px;
+    height: 118px;
+    margin-top: 10px;
+}
+.kaishizhifu .rightTiao .pay{
+	width: 76px;
+    height: 32px;
+    position: absolute;
+    right: 64px;
+    top: 71px;
+}
+.kaishizhifu .rightTiao .blueKuang{
+	width: 100px;
+    height: 33px;
+    float: left;
+    border-radius: 15%;
+    margin-left: 52px;
+    margin-top: 5px;
+    background-color: cornflowerblue;
+}
+.rightTiao .blueKuang .zhanghu{
+	font-size: 12px;
+    margin-top: -3px;
+    color: #333;
+    display: block;
+}
+.kaishizhifu .tishi .quan{
+	width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    
+}
+.kaishizhifu .tishi .whitequan{
+	position: absolute;
+    left: 68px;
+    bottom: 22px;
+}
+.kaishizhifu .tishi .blockquan{
+	position: absolute;
+    left: 90px;
+    bottom: 22px;
+	background-color: #ccc;
+}

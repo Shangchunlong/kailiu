@@ -1,0 +1,245 @@
+.wrap{
+	min-width: 1000px;
+}
+/* ********************************头部元素 *************************************/
+
+.header{
+	border-bottom: 4px solid #176fbb;
+}
+.header .con{
+	width: 1000px;
+	background: #ccc;
+	margin:0 auto;
+	background:url(../img/common/logo_03.png) 8px 14px no-repeat;
+	padding-top: 15px;
+}
+.header .con1{
+	padding-right: 21px;
+	overflow: hidden;
+	padding-bottom: 40px;
+}
+/******************************* 以下是头部con1 **********************************/
+
+
+.header .con .con1 .search{
+	width: 181px;
+	height: 28px;
+	background:url(../img/common/ipt.png) 0 0 no-repeat;
+	float: right;
+	position: relative;
+	padding: 0 0;
+}
+.search input{
+	position:absolute ;
+	top: 4px;
+	left: 3px;
+	width: 144px;
+	height: 20px;
+	border-width: 0;
+	outline: 0;
+}
+.header .con1 .leftsearch{
+	float: right;
+	height: 24px;
+	line-height: 24px;
+	position: relative;
+	padding: 4px 0 0 0;
+	color: #3c3c3c;
+
+}
+.header .con1 div{
+	float: right;
+	height: 19px;
+	padding: 0px 16px 0px;
+	/* margin-top: 4px; */
+	line-height: 19px;
+}
+.header .con1 .bag{
+	padding-left: 47px;
+	/* font-weight: bold; */
+	color: #3c3c3c;
+}
+#headcon1{
+	color: #3c3c3c;
+}
+.header .bag img{
+	position: absolute;
+	right: 66px;
+	bottom: 4px;
+}
+.header .con1 .zhuce{
+	border-right: 2px solid;
+	/* font-weight: bold; */
+	color: #3c3c3c;
+}
+.header .con1 .tel{
+	/* position: relative; */
+	border-right: 2px solid;
+
+}
+.header .con1 .tel a{
+	color: #ffa000;
+	font-weight: bold;
+}
+.header .con1 .tel img{
+	position: absolute;
+	left: -10px;
+	top: 4px;
+
+}
+
+
+
+/******************************* 以上是头部con1 **********************************/
+.search a{
+	position: absolute;
+	width: 28px;
+	height: 28px;
+	right: 0;
+	top: 0;
+}
+.header .con2{
+	width: 745px;
+	margin-left: auto;
+	margin-right: auto;
+	height: 24px;
+	line-height: 24px;	
+	padding-left: 255px;
+	position: relative;
+	margin-bottom: 6px;
+	font-weight: bold;
+	
+}
+
+.header .con2 .posimg{
+	position: absolute;
+	left: 196px;
+	margin-right: 0;
+	width: 21px;
+	height: 21px;
+}
+.header .con2 a{
+	font-size: 18px;
+	margin-right: 36px;
+	color: #3c3c3c;
+}
+/* *************************************以上是头部 ********************************/
+
+/************************************** 面包屑样式 ******************************/
+.pos{
+	width: 1000px;
+	margin: 0 auto;
+	height: 53px;
+	line-height: 53px;
+	font-size: 14px;
+}
+.pos a{
+	color: #3c3c3c;
+}
+
+/***********************************以上是面包屑样式 ******************************/
+
+/* **************************************内容样式 ***********************************/
+
+
+
+/* ************************************页码 *************************/
+.content .page{
+	overflow: hidden;
+	width: 410px;
+	margin: 0 auto;
+}
+.content .page div{
+	float: left;
+	padding: 4px 8px ;
+	font-style: 12px;
+
+}
+.content .page div:hover{
+	background-color: #6e6e6e;
+	color: white;
+}
+
+
+
+
+
+
+
+/******************************** 以上是内容样式 **********************************/
+/********************************* 以下是尾部 *************************************/
+.footer{
+	background: #023c4d;
+}
+.footer .con1{
+	width: 900px;
+	/* height: 178px; */
+	margin: 0 auto;
+	/* border: 1px solid red; */
+	padding: 20px 0 10px 100px;
+	/* padding-left: 100px; */
+	/* box-sizing: border-box; */
+	overflow: hidden;
+}
+
+.footer .con1 ul{
+	width: 150px;
+	float: left;
+}
+.con1 ul li{
+	color: #ffffff;
+	margin-bottom: 10px;
+}
+
+.con1 ul li a{
+	color: #fff;
+	font-size: 15px;
+}
+.con1 .tit{
+	font-size: 18px;
+	/* font-weight: bold; */
+
+}
+.con1 .share{
+	overflow: hidden;
+	margin-top:18px ;
+}
+
+.con1 .share span{
+	float: left;
+	width: 35px;
+	height: 35px;
+	margin-right: 8px;
+	cursor: pointer;
+}
+.con1 .share .weibo{
+	background:  url(../img/common/weibo_03.png) 0 0 no-repeat;
+}
+.con1 .share .weixin{
+	background:  url(../img/common/weixin_03.png) 0 0 no-repeat;
+}
+.con1 .phonenum{
+	font-size: 27px;
+	/* font-weight: bold; */
+	height: 30px;
+	line-height: 30px;
+}
+.footer .con1 .list5{
+	width: 182px;
+}
+.con1 .zixun{
+	width: 130px;
+	height: 25px;
+	background:  url(../img/common/zixun.png) 0 0 no-repeat;
+	margin-top: 22px;
+	cursor: pointer;
+}
+
+.footer .con2{
+	height: 57px;
+	line-height: 57px;
+	text-align: center;
+	color: #fff;
+	font-size: 14px;
+	border-top: 2px solid #fff;
+}

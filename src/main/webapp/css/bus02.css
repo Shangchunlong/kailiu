@@ -1,0 +1,441 @@
+/****************************** 内容块 *****************************/
+.content{
+	
+	width: 1000px;
+	margin: 0 auto 30px;
+	overflow: hidden;
+	padding-top: 28px;
+}
+
+/****************************** 上内容块 *****************************/
+.conup{
+	width: 1000px;
+	overflow: hidden;
+	border-bottom: 1px solid #898989;
+}
+	/*********************************** 上内容标题块 **************************/
+	.tit{
+	width: 1000px;
+	overflow: hidden;
+	margin-bottom: 15px;
+	}
+	.tit h3{
+		float: left;
+		height: 39px;
+		line-height: 39px;
+		font-size: 28px;
+		margin-right: 19px;
+		margin-left: 8px;
+		color: #3c3c3c;
+
+	}
+	.tit img{
+		float: left;
+
+	}
+
+	/* 喜欢评论 */
+	.like{
+		float: right;
+		overflow: hidden;
+	}
+	.like div{
+		overflow: hidden;
+		float: left;
+		position: relative;
+	}
+	.like div a{
+		float: left;
+		color: #6e6e6e;
+	}
+	.like div .alllike{
+		padding-left: 24px;
+		height: 39px;
+		line-height: 58px;
+		padding-right: 8px;
+
+	}
+	.like div .amount{
+		height: 39px;
+		line-height: 58px;
+		padding-right: 23px;
+	}
+	.like .img{
+		height: 16px;
+		width: 16px;
+		position: absolute;
+		top: 20px;
+		left: 0px;
+	}
+  /*********************************** 上内容左图片 **************************/
+	.conup .leftimg{
+		float: left;
+		width: 558px;
+		height: 390px;
+	}
+/************************************** 上内容右内容块 ***********************/
+	.conup .titright{
+		float: left;
+		margin-left:28px ;
+		height: 390px;
+		overflow: hidden;
+	}
+		/* 格式 */
+	.titright div{
+		padding-top: 18px;
+		padding-bottom: 10px;
+		border-bottom: 1px dashed #898989;
+		border-top: 1px dashed #898989;
+	}
+	.content .conup .titright .address{
+		overflow: hidden;
+		height: 16px;
+		line-height: 16px;
+	}
+	.content .conup .address .add{
+		width: 68px;
+		height: 16px;
+		line-height: 16px;
+		font-size: 14px;
+		float: left;
+		word-spacing: 23px;
+		/* text-align: justify; */
+	}
+	/* 酒店特色 */
+	.titright .hotel{
+		overflow: hidden;
+		border-top: none;
+
+	}
+	.hotel p{
+		float: left;
+		width: 282px;
+		margin-left: 14px;
+		line-height: 20px;
+	}
+	.hotel .hotelname{
+		float: left;
+		word-spacing: none;
+		font-size: 14px;
+		width: 68px;
+	}
+	.titright .special{
+		height: 139px;
+		padding-bottom: 0px;
+	}
+	.content .conup .address p{
+		width: 332px;
+		float: left;
+		height: 16x;
+		line-height: 16px;
+		font-size: 14px;
+		margin-left: 14px;
+	}
+
+	.titright .hotelbottom{
+		overflow: hidden;
+		border-top:none;
+	}
+	.titright .hotelbottom h3{
+		width: 68px;
+		height: 21px;
+		line-height: 21px;
+		font-size: 14px;
+		float: left;
+		word-spacing: 23px;
+	}
+	.titright .hotelbottom p{
+		padding-left: 28px;
+		float: left;
+		width: 78px;
+		height: 21px;
+		line-height: 21px;
+		position: relative;
+		margin-left: 14px;
+	}
+	.titright .hotelbottom .ppp{
+		margin-left: 0px;
+	}
+	.titright .hotelbottom p img{
+		position: absolute;
+		left: 0px;
+		top: 0px;
+	}
+/* 点赞评论 */
+	.titright .dianzanpinglun{
+		width: 413px;
+		overflow: hidden;
+		border: none;
+		padding: 0;
+	}
+	.titright .dianzanpinglun .like{
+		height: 36px;
+		border: none;
+		padding: 0;
+	}
+	.titright .dianzanpinglun .verylike{
+		color:#176fbb;
+		padding-right: 65px;
+	}
+	.titright .dianzanpinglun .like .img{
+		top: 3px;
+	}
+	.titright .dianzanpinglun .like div{
+		border: none;
+		padding: 0;
+		overflow: hidden;
+	}
+	.titright .dianzanpinglun .like div a{
+		height: 36px;
+		line-height: 36px;
+		padding-top: 0 ;
+		padding-bottom: 0 ;
+		float: left;
+	}
+/***************************************** 上下图片 *********************************/
+.conup .imgbottom{
+	padding-bottom: 20px;
+	padding-top: 20px;
+	clear: left;
+	overflow: hidden;
+	position: relative;
+}
+.imgbottom img{
+	float: left;
+	width: 230px;
+	height: 160px;
+	margin-right:26px ;
+	
+}
+.imgbottom .finalimg{
+	margin-right:0px ;
+}
+.imgbottom .buu1{
+	width: 36px;
+	height: 36px;
+	position: absolute;
+	left:21px ;
+	top:83px ;
+}
+.imgbottom .buu2{
+	width: 36px;
+	height: 36px;
+	position: absolute;
+	right:21px ;
+	top:83px ;
+}
+.imgbottom .buu1 img,.imgbottom .buu2 img{
+	width: 36px;
+	height: 36px;
+}
+
+/******************************** 左内容块 **************************/
+.content .conleft{
+	
+	width: 840px;
+	border-bottom: 1px  solid #898989;
+	padding-bottom: 23px;
+	margin: auto;
+}
+
+ /********************************** 双层巴士 ***********************/
+.conleft .normalhouse{
+	padding-top: 28px;
+	overflow: hidden;
+	border-bottom: 1px solid #898989;
+} 
+.conleft .normalhouse .cap div,.conleft .normalhouse .capcon div{
+	float: left;
+
+}
+.conleft .normalhouse .cap{
+	overflow: hidden;
+}
+.conleft .normalhouse .capcon{
+	overflow: hidden;
+}
+.conleft .normalhouse .cap .div11{
+	padding-left: 19px;
+	width: 231px;
+	height: 38px;
+	float: left;
+	line-height: 38px;
+	font-size: 18px;
+	background-color: #ffa000;
+	color: white;
+	border-right: 1px solid #F8F8FF;
+}
+
+.conleft .normalhouse .cap .div22{
+	width: 111px;
+	height: 38px;
+	overflow: left;
+	line-height: 38px;
+	font-size: 16px;
+	background-color: #ffa000;
+	color: white;
+	border-right: 1px solid #F8F8FF;
+	text-align: center;
+}
+.conleft .normalhouse .cap .div33{
+	width: 106px;
+	height: 38px;
+	overflow: left;
+	line-height: 38px;
+	font-size: 16px;
+	background-color: #ffa000;
+	color: white;
+	border-right: 1px solid #F8F8FF;
+	text-align: center;
+}
+.conleft .normalhouse .cap .div44{
+	width: 155px;
+	height: 38px;
+	overflow: left;
+	line-height: 38px;
+	font-size: 16px;
+	background-color: #ffa000;
+	color: white;
+	text-align: center;
+}
+
+
+
+.conleft .normalhouse .capcon .div11{
+	padding-left: 19px;
+	width: 231px;
+	height: 195px;
+	float: left;
+	line-height: 38px;
+	font-size: 18px;
+	background-color: #eeeeee;
+	color: white;
+	border-right: 1px solid #c8c8c8;
+	position: relative;
+	border-bottom: 1px solid #c8c8c8;
+
+}
+.conleft .normalhouse .capcon .div11 img{
+	width: 231px;
+	height: 175px;
+	position: absolute;
+	top: 10px;
+	left: 10px;
+}
+.conleft .normalhouse .capcon .div22{
+	width: 111px;
+	height: 195px;
+	overflow: left;
+	line-height: 38px;
+	font-size: 16px;
+	background-color: #eeeeee;
+	color: white;
+	border-right: 1px solid #c8c8c8;
+	border-bottom: 1px solid #c8c8c8;
+	text-align: center;
+}
+.conleft .normalhouse .capcon .div33{
+	width: 106px;
+	height: 195px;
+	overflow: left;
+	line-height: 38px;
+	font-size: 16px;
+	background-color: #eeeeee;
+	color: white;
+	border-right: 1px solid #c8c8c8;
+	border-bottom: 1px solid #c8c8c8;
+	text-align: center;
+}
+.conleft .normalhouse .capcon .div44{
+	width: 154px;
+	height: 195px;
+	overflow: left;
+	line-height: 38px;
+	font-size: 16px;
+	background-color: #eeeeee;
+	color: white;
+	text-align: center;
+	border-right: 1px solid #c8c8c8;
+	border-bottom: 1px solid #c8c8c8;
+}
+.capcon div .capcontent{
+	height: 14px;
+	line-height: 14px;
+	font-size: 14px;
+	margin: 78px auto 0;
+	font-weight: bold;
+	color: #3c3c3c;
+}
+.capcon div .nowprice{
+	height: 24px;
+	line-height: 24px;
+	margin:57px auto 0;
+	font-size: 14px;
+	font-weight: bold;
+	color: #3c3c3c;
+}
+.capcon div .nowprice span{
+	color: #cc0000;
+	font-size: 24px;
+}
+.capcon div .beforeprice{
+	height: 14px;
+	line-height: 14px;
+	margin:13px auto 0;
+	font-size: 14px;
+	font-weight: bold;
+	text-decoration:line-through ;
+	color: #6e6e6e;
+}
+/***************************** 巴士信息块 **********************/
+.conleft .normalhouse .capintro{
+	height:75px;
+	width: 819px;
+	border-right: 1px solid #c8c8c8;
+	border-left: 1px solid #c8c8c8;
+	border-bottom: 1px solid #c8c8c8;
+	padding-top: 20px;
+	padding-left: 19px;
+	padding-bottom: 10px;
+
+}
+.conleft .normalhouse .capintro p{
+	height: 14px;
+	line-height: 14px;
+	font-size: 14px;
+	margin-bottom: 10px;
+	color: #3c3c3c;
+}
+/****************************** 预定信息 **************************/
+.conleft .normalhouse .reserve{
+	overflow: hidden;
+	width: 701px;
+
+}
+.conleft .normalhouse .reserve .jinzhang{
+	float: right;
+	font-size: 12px;
+	color: #cc0000;
+	height: 55px;
+	line-height: 55px;
+	margin-left: 15px;
+}
+.conleft .normalhouse .reserve .suding{
+	margin-top: 14px;
+	width: 100px;
+	height: 25px;
+	line-height: 25px;
+	text-align: center;
+	background:  url(../img/imgs02/yuding_03.png) 0 0 no-repeat;
+	float: right;
+	font-size: 14px;
+	color: #ffffff;
+}
+.conleft .normalhouse .reserve .yiding{
+	float: right;
+	font-size: 12px;
+	color: #6e6e6e;
+	height: 55px;
+	line-height: 55px;
+	margin-right: 15px;
+}

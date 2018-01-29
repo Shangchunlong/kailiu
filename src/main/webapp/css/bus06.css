@@ -1,0 +1,198 @@
+/******************************** 内容框 *******************************/
+.content{
+	width: 960px;
+	border: 1px solid #3c3c3c;
+	padding: 20px;
+	margin: 0 auto;
+	margin-bottom: 30px;
+	overflow: hidden;
+}
+/********************************** 上结构 ********************************/
+.up{
+	width: 960px;
+	overflow: hidden;
+	border-bottom: 1px solid #3c3c3c;
+	margin-bottom: 25px;
+}
+/* 上结构左内容 */
+.upleft{
+	float: left;
+	width: 542px;
+	margin-right: 160px;
+}
+.comm{
+	overflow: hidden;
+}
+.comm h3{
+	width: 83px;
+	text-align: right;
+	font-size: 16px;
+	color: #3c3c3c;
+	margin-right: 29px;
+	float: left;
+}
+.comm p{
+	font-size: 14px;
+	margin-right: 59px;
+	float: left;
+	line-height: 22px;
+}
+.upleft .div2{
+	padding: 10px 0;
+	border-bottom: 1px dashed #3c3c3c;
+	border-top: 1px dashed #3c3c3c;
+	margin-top: 8px;
+	margin-bottom: 8px;
+}
+.upleft .div3{
+	margin-bottom: 20px;
+}
+/* 右边按钮 */
+.upright{
+	float: left;
+	width: 135px;
+	height: 36px;
+	color: #ffff;
+	text-align: center;
+	line-height: 36px;
+	font-weight: bold;
+	font-size: 16px;
+	background:  url(../img/busimg/newimg.png) 0 0 no-repeat;
+	margin-top: 26px;
+}
+
+
+/************************************ 下结构 ******************************/
+.con{
+	width: 960px;
+	overflow: hidden;
+}
+
+/************************************ 左内容 ******************************/
+.conleft{
+	float: left;
+	width: 542px;
+}
+.conleft h3{
+	font-size: 16px;
+	color: #3c3c3c;
+	padding-bottom: 16px;
+}
+
+
+.conleft p{
+	font-size: 14px;
+	color: #3c3c3c;
+	padding-bottom: 16px;
+}
+.conleft p var{
+	padding: 0 15px;
+}
+.bottomp{
+	border-bottom: 1px solid #3c3c3c;
+}
+
+/* 金额信息 */
+.priceinfo{
+	margin-left: 20px;
+	width: 443px;
+	height: 14px;
+	overflow: hidden;
+	background:  url(../img/busimg/diandiandian_03.png) 0 10px repeat-x;
+	margin-top: 20px;
+}
+.priceinfo p{
+	float: left;
+	font-size: 12px;
+	color: #3c3c3c;
+	background-color: white;
+}
+
+.priceinfo var{
+	float: right;
+	font-size: 12px;
+	color: #3c3c3c;
+	background-color: white;
+}
+
+
+
+
+/*********************************** 右内容 ******************************/
+.content .conright{
+	float: right;
+	width: 385px;
+	border: 1px solid #3c3c3c;
+	padding-bottom: 50px;
+}
+
+
+.nindexuanze{
+	height: 37px;
+	background-color: #d2d2d2;
+	padding-left: 20px;
+
+	height: 37px;
+	line-height: 37px;
+	font-size: 16px;
+	color: #3c3c3c;
+}
+/* 标准 */
+.biaozhundexuanze{
+	padding-top: 24px;
+	padding-left:20px ;
+	overflow: hidden;
+}
+/* 第一块 */
+.xilaideng{
+	width:200px;
+	height:150px;
+	float: left;
+	margin-right: 35px;
+}
+.tupianyouce{
+	padding-top: 37px;
+	float: left;
+	
+	font-size: 14px;
+	color:#3c3c3c ;
+	font-weight: bold;
+}
+.tupianyouce p{
+	width: 120px;
+	text-align: center;
+	margin-bottom: 8px;
+	margin: 0 auto;
+}
+
+
+.conright h3{
+	font-size: 14px;
+	color: #3c3c3c;
+}
+
+
+.nanfanghangkong{
+	padding-top: 17px;
+	border-top: 1px dashed #3c3c3c;
+	margin-top: 17px;
+	margin-left:20px;
+	margin-right:20px;
+}
+
+.piaojialeixing{
+	padding-top: 20px;
+	margin-left:20px;
+	margin-right:20px;
+
+}
+
+
+
+
+
+
+
+
+
+

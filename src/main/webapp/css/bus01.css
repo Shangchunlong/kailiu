@@ -1,0 +1,404 @@
+/* **************************************内容样式 ***********************************/
+.wrap .options{
+	width: 1000px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.options ul{
+	overflow:hidden ;
+	border-bottom: 1px dashed;
+	padding-top: 14px;
+	padding-bottom: 14px;
+
+}
+
+.options ul li{
+	width: 126px;
+	height: 25px;
+	line-height: 25px;
+	float: left;
+	font-weight: bold;
+	color: #3c3c3c;
+
+}
+ .options ul li a{
+	margin-left: 19px;
+	height: 25px;
+	line-height: 25px;
+	font-size: 16px;
+	color: #3c3c3c;
+	font-weight: bold;
+} 
+.options ul .areaname{
+	width: 88px;
+	font-size: 18px;
+	float: left;
+}
+.options ul .all{
+	width: 85px;
+}
+.options ul .all a{
+	color: #ffa000;
+}
+.example{
+	background: url(../imgs/imgs01/yuanjiaojuxing_03.png) 0 0 no-repeat;
+}
+
+.options .realarea li{
+	width: 70px;
+	height: 25px;
+	text-align: center;
+	line-height: 25px;
+	font-size: 16px;
+	float: left;
+	margin-right: 56px;
+	cursor: pointer;
+}
+.options .realarea .allarea{
+	margin-right: 13px;
+	color: #ffa000;
+}
+.area .money{
+	position: relative;
+	padding-left:35px;
+	box-sizing: border-box;
+}
+.area .money4{
+	width: 145px;
+
+}
+ .area .money5{
+	padding-left:20px;
+} 
+.area .money .clickcircle{
+	width: 14px;
+	height: 14px;
+	position: absolute;
+	left:15px ;
+	top: 6px;
+	margin: 0;
+	background:  url(../img/img01/notclick_07.png) 0px 0px no-repeat;
+}
+.area .money5 .clickcircle{
+	position: absolute;
+	left:0px ;
+	top: 6px;
+}
+/**************************** 车型 ****************************/
+
+.options .upbottom{
+	border-bottom: 1px solid;
+	float: left;
+	width: 853px;
+	margin-bottom: 29px;
+}
+.options .upbottom .all{
+	font-size: 16px;
+	margin-right: 20px;
+	color: #ffa000;
+}
+.options .upbottom li{
+	width: 70px;
+	line-height: 25px;
+	text-align: center;
+	font-size: 14px;
+	margin-right: 52px;
+	cursor: pointer;
+}
+.options .resetbutton{
+	float: left;
+	height: 48px;
+	width: 147px;
+	text-align: center;
+	line-height: 96px;
+	text-decoration:underline;
+	color: #6e6e6e;
+}
+/* ************************************推荐 *************************/
+.band{
+	width: 1000px;
+	overflow: hidden;
+	background-color: #ffa000;
+	margin: 0 auto 0px;
+}
+
+.band a{
+	float: left;
+	height: 38px;
+	line-height: 38px;
+	width: 102px;
+	font-size: 18px;
+	color: #ffffff;
+}
+.band .push{
+	padding-left: 34px;
+	box-sizing: border-box;
+}
+.band .price{
+	/* background:  url(../imgs/imgs01/jiantou_07.png) 67px 11px no-repeat; */
+	padding-left: 23px;
+	box-sizing: border-box;
+	position: relative;
+	background: #b46400;
+}
+.band span{
+	float: right;
+	height: 38px;
+	line-height: 38px;
+	font-size: 14px;
+	color: #fff;
+	margin-right: 21px;
+}
+.band .price .updown{
+	position: absolute;
+	left: 67px;
+	top: 11px;
+}
+/* ************************************中间内容 *************************/
+.content{
+	width: 1000px;
+	margin: 0 auto 30px;
+	border-bottom: 1px  solid #898989;
+	padding-bottom: 23px;
+}
+/* ************************************内容一 *************************/
+.content .cont{
+	border-top: 1px  solid #ffa000;
+	padding-top: 30px;
+	width: 1000px;
+}
+.cont .company{
+	overflow: hidden;
+	background-color: #f0f0f0;
+}
+.company .upleft{
+	width: 313px;
+	height: 220px;
+	float: left;
+	position: relative;
+}
+.company .upleft img{
+	width: 313px;
+	height: 220px;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+}
+.company .upright{
+	width: 658px;
+	padding-left: 29px;
+	float: left;
+}
+.company .upleft a{
+	width: 36px;
+	height: 36px;
+} 
+
+.company .upleft .upll{
+	position: absolute;
+	left: 11px;
+	top: 103px;
+	background:  url(../imgs/imgs01/Lbutton_09.png) 0 0 no-repeat;
+}
+.company .upleft .uplr{
+	position: absolute;
+	right: 11px;
+	top: 103px;
+	background:  url(../imgs/imgs01/Rbutton_03.png) 0 0 no-repeat;
+}
+
+.upright .tit{
+	width: 658px;
+	overflow: hidden;
+	border-bottom: 1px dashed;
+	margin-bottom: 20px;
+}
+.upright .tit h3{
+	float: left;
+	height: 39px;
+	line-height: 39px;
+	font-size: 16px;
+	margin-right: 19px;
+
+}
+.upright .tit img{
+	float: left;
+
+}
+/* 右边内容 */
+.content .upright .concon .address{
+	overflow: hidden;
+	height: 16px;
+	line-height: 16px;
+	margin-bottom: 24px;
+}
+.content .upright .address .add{
+	width: 94px;
+	height: 16px;
+	line-height: 16px;
+	font-size: 14px;
+	float: left;
+	word-spacing: 23px;
+	/* text-align: justify; */
+}
+/* 酒店特色 */
+.concon .hotel{
+	overflow: hidden;
+
+}
+.hotel p{
+	float: left;
+	width: 481px;
+	margin-left: 14px;
+	line-height: 20px;
+}
+.hotel .hotelname{
+	float: left;
+	word-spacing: none;
+	font-size: 14px;
+	width: 94px;
+}
+.content .upright .address p{
+	width: 480px;
+	float: left;
+	height: 16x;
+	line-height: 16px;
+	font-size: 14px;
+	margin-left: 14px;
+}
+
+.hotelbottom{
+	overflow: hidden;
+	margin: 10px 0 12px;
+}
+.concon .hotelbottom h3{
+	width: 94px;
+	height: 21px;
+	line-height: 21px;
+	font-size: 14px;
+	float: left;
+	word-spacing: 23px;
+}
+.concon .hotelbottom p{
+	padding-left: 28px;
+	float: left;
+	width: 78px;
+	height: 21px;
+	line-height: 21px;
+	position: relative;
+	margin-left: -12px;
+}
+.concon .hotelbottom .ppp{
+	margin-left: 0px;
+}
+.concon .hotelbottom p img{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+}
+/********************************** 下部内容 ****************************/
+.condown{
+	overflow: hidden;
+	width: 1000px;
+}
+.condown1{
+	margin-top: 20px;
+	padding-bottom: 24px;
+}
+.condown .shu{
+	float: left;
+}
+.condown .div1 .a{
+	 width: 257px;
+	 height: 30px;
+	 background: #eeeeee;
+	 border-right: 1px solid #ffffff;
+	 line-height: 30px;
+	 text-align: center;
+}
+.condown .div1 .b{
+	 width: 257px;
+	 height: 189px;
+	 border-right: 1px solid #c8c8c8;
+	  border-bottom:1px solid #898989;
+	  position: relative;
+}
+.condown .div1 .bb{
+	  border-bottom:1px dashed #c8c8c8;
+
+}
+.condown .div2{
+	width: 98px;
+	border-right: 1px solid #ffffff;
+}
+.condown .div2 .a{
+	 width: 98px;
+	 height: 30px;
+	 background: #eeeeee;
+	 border-right: 1px solid white;
+	 line-height: 30px;
+	 text-align: center;
+	 color: #6e6e6e;
+}
+
+.condown .div2 .b{
+	 width: 98px;
+	 height: 189px;
+	 border-right: 1px solid #c8c8c8;
+	 text-align: center;
+	 line-height: 189px;
+	 border-bottom:1px solid #898989;
+	 font-weight: bold;
+
+}
+.condown .div2 .bb{
+	border-bottom:1px dashed #c8c8c8;
+}
+.condown .div2 .xianjia{
+	font-size: 24px;
+	color: #cc0000;
+}
+.condown .div8{
+	width: 147px;
+}
+.condown .div8 .a{
+	 width: 147px;
+	 height: 30px;
+	 background: #eeeeee;
+	 border-right:1px solid #c8c8c8;
+	 line-height: 30px;
+	 text-align: center;
+	 color: #6e6e6e;
+
+}
+
+.condown .div8 .b{
+	 width: 147px;
+	 height: 189px;
+	 border-right: 1px solid #c8c8c8;
+	border-bottom:1px solid #898989;
+	background:  url(../img/imgs01/yuding_03.png) 24px 82px no-repeat;
+	
+	position: relative;
+}
+.condown .div8 .bb{
+	border-bottom:1px dashed #c8c8c8;
+}
+.condown .div1 .b img{
+	width: 228px;
+	height: 160px;
+	position: absolute;
+	top: 15px;
+	left: 0px;
+}
+.div8 .b a{
+	position: absolute;
+	left: 24px;
+	top: 81px;
+	width: 100px;
+	height: 25px;
+	line-height: 25px;
+	text-align: center;
+	color: white;
+}
+

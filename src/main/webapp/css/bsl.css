@@ -1,0 +1,181 @@
+
+.wrap{
+	min-width: 1000px;
+}
+/************************************** 面包屑样式 ******************************/
+.pos{
+	width: 1000px;
+	margin: 0 auto;
+	height: 53px;
+	line-height: 53px;
+	font-size: 14px;
+}
+.banner{
+	height: 350px;
+	background:url(../img/pageimg/banner.jpg) center center no-repeat;
+}
+/***********************************以上是面包屑样式 ******************************/
+
+/* **************************************内容样式 ***********************************/
+.content{
+	width: 1000px;
+	/* height: 640px; */
+	/* background: #ccc; */
+	margin: 0 auto;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	overflow: hidden;
+}
+.content h1{
+	height: 38px;
+	line-height: 38px;
+	font-size: 30px;
+	color: #cc0000;
+	width: 90px;
+	background:url(../img/pageimg/icon.png) 0 0 no-repeat;
+	padding-left: 55px;
+	margin: 0 auto 30px;
+
+}
+.content ul{
+	overflow: hidden;
+	width: 1100px;
+	list-style:none
+}
+.content li{
+	width: 314px;
+	height: 223px;
+	margin: 0 29px 29px 0;
+	float: left;
+	position: relative;
+}
+
+.content li  img{
+	width: 314px;
+	height: 223px;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	z-index: 25;
+}
+.content li  h3{
+	width: 314px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	background: rgba(0,0,0,0.5);
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	color: white;
+	z-index: 30;
+}
+
+.popup{
+	width: 314px;
+	height: 223px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 50;
+	background:  url(../img/pageimg/bantoumingbeijingtu_03.png) 0 0 repeat; 
+	display: none;
+
+}
+.popup div{
+	width: 125px;
+	/*height: 15px;*/
+	margin: 30px auto 0;
+	overflow: hidden;
+}
+.popup div span{
+	height: 15px;
+	line-height: 15px;
+	padding-left: 25px;
+	position: relative;
+	color: white;
+}
+.popup div span a{
+	position: absolute;
+	left: 0;
+	top: 0px;
+	width: 15px;
+	height: 15px;
+}
+.popup div span .a1{
+	background:  url(../img/pageimg/xin_03.png) 0 0 no-repeat;
+}
+.popup div span .a2{
+	background:  url(../img/pageimg/blue_03.png) 0 0 no-repeat;
+}
+
+.popup div .spanl{
+	float: left;
+}
+.popup div .spanr{
+	float: right;
+}
+
+.popup h2{
+	width: 314px;
+	height: 18px;
+	line-height: 18px;
+	text-align: center;
+	font-size: 16px;
+	color: white;
+	margin-top: 20px;
+}
+.popup p{
+	font-size: 14px;
+	color: white;
+	text-align: center;
+	width: 200px;
+	margin: 20px auto 0;
+}
+.popup img{
+	display: block;
+	width: 275px;
+	height: 38px;
+	margin: 20px auto 0;
+
+}
+.popup h4{
+	width: 275px;
+	height: 38px;
+	margin: 20px auto 0;
+	background:  url(../img/pageimg/gift3_03.png) 0 0 no-repeat;
+}
+
+/******************************* 隐藏元素 **************************/
+
+
+
+
+
+
+.content .page{
+	overflow: hidden;
+	width: 356px;
+	margin: 0 auto;
+}
+.content .page div{
+	float: left;
+	padding: 4px 8px ;
+	font-style: 12px;
+
+}
+.content .page div:hover{
+	background-color: #6e6e6e;
+	color: white;
+}
+
+
+
+
+
+
+
+
+
+
+/******************************** 以上是内容样式 **********************************/

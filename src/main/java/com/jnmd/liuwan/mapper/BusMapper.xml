@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+	PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.jnmd.liuwan.mapper.BusMapper">
+	<!--根据公司ID查询巴士类型  -->
+	<select id="getBusModel" resultType="BusMessage">
+		select bustypename from busmessage 
+		where company_id = #{company_id}
+	</select>
+	 <!--根据公司ID查询公司名称  -->
+	<select id="getCompanyByID" resultType="BusCompany">
+		select company_name,company_add,company_msg,company_id,company_pic 
+	    from buscompany 
+		where company_id = #{company_id}
+	</select>
+	<!-- ======================== -->
+	<!-- 页面01 分页查询-->
+	<!-- 查询公司 -->
+	<select id="getPageBusCompanys" resultType="BusCompany">
+		select company_name,company_add,company_msg,company_id,company_pic
+		from buscompany   limit #{startRecord} ,#{pageSize} 
+	</select>
+	<select id="getCompanyCount"  resultType="java.lang.Integer">
+			select count(company_id) from buscompany
+	</select>
+	
+	<select id="getBusCompanys" resultType="BusCompany">
+		select company_name,company_add,company_msg,company_id,company_pic
+		from buscompany
+	</select>
+	<!-- 根据公司id查询巴士详情 -->
+	<select id="getBusMessage" resultType="BusMessage">
+		select 
+			bus_id,bustypename,bus_num,bus_peoplenum,bus_price,company_id,end_add,
+			start_add,bus_scenic,bus_discount,bus_pic
+		from busmessage  
+		where company_id=#{company_id} limit #{page.startRecord},#{page.pageSize} 
+	</select>
+	<select id="getBusCount"  resultType="java.lang.Integer">
+			select count(bus_id) from busmessage
+	</select>
+	<!-- 根据公司id查询公司详情 -->
+	<select id="getBusCompany2" resultType="BusCompany">
+		select company_id,cid,company_name,company_add,company_msg,company_pic
+		from buscompany
+		where company_id=#{company_id}
+	</select>
+	<!-- 根据巴士ID查询巴士信息  -->
+	<resultMap id="busMap" type="BusMessage" autoMapping="true">
+		<id column="bus_id" property="bus_id"/>
+		<association property="buscompany" javaType="Buscompany" autoMapping="true">
+			<id column="company_id" property="company_id"/>
+		</association>
+	</resultMap>
+	<select id="getBusByID" resultMap="busMap">
+		select 
+			m.bus_id,m.bustypename , m.bus_num, m.bus_peoplenum, m.bus_price,
+		    m.bus_pic , m.start_add , m.end_add , m.bus_discount , m.bus_num,
+			m.bus_peoplenum ,bus_scenic,
+			c.company_name, c.company_add
+		from 
+			busmessage m 
+		left join 
+			buscompany c
+		on  
+			m.company_id = c.company_id
+		where 
+			m.bus_id= #{bus_id}
+	</select>
+</mapper>
+	

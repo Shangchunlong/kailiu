@@ -1,0 +1,568 @@
+/******************************** 以下是参数选择 ***********************************/
+
+.wrap .options{
+	width: 1000px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+/****************************************** 地区 ***********************************/
+.options input[type=text]{
+	visibility: hidden;
+	width: 0px;
+	height: 0px;
+}
+
+.options ul{
+	overflow:hidden ;
+	border-bottom: 1px dashed;
+	padding-top: 14px;
+	padding-bottom: 14px;
+
+}
+
+.options ul li{
+	width: 126px;
+	height: 25px;
+	line-height: 25px;
+	float: left;
+	font-weight: bold;
+	color: #3c3c3c;
+
+}
+ .options ul li a{
+	margin-left: 19px;
+	height: 25px;
+	line-height: 25px;
+	font-size: 16px;
+	color: #3c3c3c;
+	font-weight: bold;
+} 
+.options ul .areaname{
+	width: 88px;
+	font-size: 18px;
+	float: left;
+}
+.options ul .all{
+	width: 85px;
+}
+.options ul .all a{
+	color: #ffa000;
+}
+
+.example{
+	background: url(../imgs/imgs01/yuanjiaojuxing_03.png) 0 0 no-repeat;
+}
+
+.options .realarea li{
+	width: 70px;
+	height: 25px;
+	text-align: center;
+	line-height: 25px;
+	font-size: 16px;
+	float: left;
+	margin-right: 56px;
+	cursor: pointer;
+}
+.options .realarea .allarea{
+	margin-right: 13px;
+	color: #ffa000;
+}
+
+
+.area .money{
+	position: relative;
+	padding-left:35px;
+	box-sizing: border-box;
+}
+.area .money4{
+	width: 145px;
+
+}
+
+ .area .money5{
+	padding-left:20px;
+} 
+.area .money .clickcircle{
+	width: 14px;
+	height: 14px;
+	position: absolute;
+	left:15px ;
+	top: 6px;
+	margin: 0;
+	background:  url(../imgs/imgs01/notclick_07.png) 0px 0px no-repeat;
+}
+.area .money5 .clickcircle{
+	position: absolute;
+	left:0px ;
+	top: 6px;
+}
+
+
+/**************************** 房间 ****************************/
+.options .upbottom{
+	border-bottom: 1px solid;
+	float: left;
+	width: 853px;
+	margin-bottom: 29px;
+}
+.options .upbottom .all{
+	font-size: 16px;
+	margin-right: 20px;
+	color: #ffa000;
+}
+.options .upbottom li{
+	width: 70px;
+	line-height: 25px;
+	text-align: center;
+	font-size: 14px;
+	margin-right: 52px;
+	cursor: pointer;
+}
+.options .resetbutton{
+	float: left;
+	height: 48px;
+	width: 147px;
+	text-align: center;
+	line-height: 96px;
+	text-decoration:underline;
+	color: #6e6e6e;
+}
+
+/**************************************** band条 ********************************/
+.band{
+	width: 1000px;
+	overflow: hidden;
+	background-color: #ffa000;
+	margin: 0 auto 0px;
+}
+
+.band a{
+	float: left;
+	height: 38px;
+	line-height: 38px;
+	width: 102px;
+	font-size: 18px;
+	color: #ffffff;
+}
+.band .push{
+	padding-left: 34px;
+	box-sizing: border-box;
+}
+.band .price{
+	padding-left: 23px;
+	box-sizing: border-box;
+	position: relative;
+	background: #b46400;
+}
+.band span{
+	float: right;
+	height: 38px;
+	line-height: 38px;
+	font-size: 14px;
+	color: #fff;
+	margin-right: 21px;
+}
+.band .price .updown{
+	position: absolute;
+	left: 67px;
+	top: 11px;
+}
+
+
+/*************************************** 内容 ********************************************/
+
+/**************************************** 内容up1 ******************************************/
+.content{
+	
+	width: 1000px;
+	margin: 0 auto 30px;
+	border-bottom: 1px  solid #898989;
+	padding-bottom: 23px;
+}
+.content .cont{
+	border-top: 1px  solid #ffa000;
+	padding-top: 30px;
+	width: 1000px;
+	padding-bottom: 30px;
+	
+}
+/* 大图滚动 */
+.cont .conup{
+	overflow: hidden;
+	background-color: #f0f0f0;
+	position: relative;
+}
+.conup .upleft{
+	width: 313px;
+	height: 220px;
+	float: left;
+}
+.conup .upleft_outer{
+	width: 313px;
+	height: 220px;
+	position: relative;
+	overflow: hidden;
+}
+.upleft .upleftcon{
+	width: 1300px;
+	height: 220px;
+}
+.conup .upleft img{
+	width: 313px;
+	height: 220px;
+	float: left;
+}
+
+.conup a{
+	width: 36px;
+	height: 36px;
+} 
+.conup .upll{
+	position: absolute;
+	left: 11px;
+	top: 103px;
+	background:  url(../imgs/imgs01/Lbutton_09.png) 0 0 no-repeat;
+}
+.conup .uplr{
+	position: absolute;
+	left: 265px;
+	top: 103px;
+	background:  url(../imgs/imgs01/Rbutton_03.png) 0 0 no-repeat;
+}
+/* 大图滚动 */
+
+.conup .upright{
+	width: 658px;
+	padding-left: 29px;
+	float: left;
+}
+.conup .upleft a{
+	width: 36px;
+	height: 36px;
+} 
+
+.conup .upleft .upll{
+	position: absolute;
+	left: 11px;
+	top: 103px;
+	background:  url(../imgs/imgs01/Lbutton_09.png) 0 0 no-repeat;
+}
+.conup .upleft .uplr{
+	position: absolute;
+	right: 11px;
+	top: 103px;
+	background:  url(../imgs/imgs01/Rbutton_03.png) 0 0 no-repeat;
+}
+
+.upright .tit{
+	width: 658px;
+	overflow: hidden;
+	border-bottom: 1px dashed;
+	margin-bottom: 20px;
+}
+.upright .tit h3{
+	float: left;
+	height: 39px;
+	line-height: 39px;
+	font-size: 16px;
+	margin-right: 19px;
+}
+.upright .tit h3 a{
+	color:#3c3c3c;
+}
+.upright .tit img{
+	float: left;
+
+}
+
+/* 喜欢评论 */
+.like{
+	float: right;
+	overflow: hidden;
+}
+.like div{
+	overflow: hidden;
+	float: left;
+	position: relative;
+}
+.like div a{
+	float: left;
+	color: #6e6e6e;
+}
+.like div .alllike{
+	padding-left: 24px;
+	height: 39px;
+	line-height: 39px;
+	padding-right: 8px;
+
+}
+.like div .amount{
+	height: 39px;
+	line-height: 39px;
+	padding-right: 23px;
+}
+.like .img{
+	height: 16px;
+	width: 16px;
+	position: absolute;
+	top: 12px;
+	left: 0px;
+}
+
+
+/* 右边内容 */
+.content .upright .concon .address{
+	overflow: hidden;
+	height: 16px;
+	line-height: 16px;
+	margin-bottom: 24px;
+}
+.content .upright .address .add{
+	width: 68px;
+	height: 16px;
+	line-height: 16px;
+	font-size: 14px;
+	float: left;
+	word-spacing: 23px;
+	/* text-align: justify; */
+}
+/* 酒店特色 */
+.concon .hotel{
+	overflow: hidden;
+
+}
+.hotel p{
+	float: left;
+	width: 481px;
+	margin-left: 14px;
+	line-height: 20px;
+}
+.hotel .hotelname{
+	float: left;
+	word-spacing: none;
+	font-size: 14px;
+	width: 68px;
+}
+.content .upright .address p{
+	width: 480px;
+	float: left;
+	height: 16x;
+	line-height: 16px;
+	font-size: 14px;
+	margin-left: 14px;
+}
+
+.hotelbottom{
+	overflow: hidden;
+	margin-top: 24px;
+}
+.concon .hotelbottom h3{
+	width: 68px;
+	height: 21px;
+	line-height: 21px;
+	font-size: 14px;
+	float: left;
+	word-spacing: 23px;
+}
+.concon .hotelbottom p{
+	padding-left: 28px;
+	float: left;
+	width: 78px;
+	height: 21px;
+	line-height: 21px;
+	position: relative;
+	margin-left: 14px;
+}
+.concon .hotelbottom .ppp{
+	margin-left: 0px;
+}
+.concon .hotelbottom p img{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+}
+
+/* *************没有符合条件的酒店时的样式情况*************** */
+		
+.conup .nowarn{
+	padding-left:420px;
+	background:#f7f7f7 url(../imgs/imgs01/cry-hotel.png) 250px 55px no-repeat;
+	width:580px;
+	height:220px;
+}
+
+.conup .nowarn h5{
+	padding:80px 0 10px;
+	font-size:18px;
+}
+.conup .nowarn p{
+	font-size:14px;
+} 
+/* *************没有符合条件的酒店时的样式情况*************** */
+/* *************酒店房间情况*************** */
+.room_intr_wrap{
+	overflow: hidden;
+	margin-top: 28px;
+}
+.ri_title{
+	overflow: hidden;
+}
+.ri_title .rit_clo{
+	height: 30px;
+	line-height: 30px;
+	background: #f0f0f0;
+	font-size: 16px;
+	color: #6e6e6e;
+	text-align: center;
+	float: left;
+	margin-right: 1px;
+}
+.ri_title .rit_1{
+	width: 260px;
+}
+.ri_title .rit_2{
+	width: 97px;
+}
+.ri_title .rit_3{
+	width: 150px;
+}
+.ri_info li{
+	/* padding-bottom: 30px; */
+	height: 189px;
+	width: 999px;
+	border-bottom: 1px dashed #8e8e8e;
+}
+.ri_info .rii_pic{					/* */
+	width: 260px;
+	height: 190px;
+	border-right: 1px solid #8e8e8e;
+	float: left;
+}	
+.ri_info .rii_pic .riip_1{
+	width: 228px;
+	height: 160px;
+	overflow: hidden;
+	margin: 15px 0 15px 0;
+}
+.ri_info .rii_clo{
+	width: 97px;
+	height:190px;
+	line-height: 190px;
+	text-align: center;
+	font-size: 14px;
+	color: #3c3c3c;
+	float: left;
+	border-right: 1px solid #8e8e8e;
+}
+.ri_info .rii_1{
+	text-decoration: line-through;
+}
+.ri_info .rii_2{
+	font-size: 24px;
+	color: #cc0000;
+}
+.ri_info .rii_3{
+	width: 149px;
+	height: 190px;			
+	border-right: 1px solid #8e8e8e;
+	float: left;
+	position: relative;
+}
+.ri_info .rii_3 .fastbook{
+	background: url(../imgs/imgs01/yuding_03.png) 0 0 no-repeat;
+	width: 100px;
+	height: 26px;
+	line-height: 26px;
+	text-align: center;
+	color: #fff;
+	font-size: 14px;
+	position: absolute;
+	top: 79px;
+	left: 24px;
+	cursor: pointer;
+}
+.ri_info .rii_3 .fastbook a{
+	display:block;
+	width:100px;
+	height:26px;
+	line-height:26px;
+	text-align:center;
+	color: #fff;
+}
+/*##################### 特别的 */
+.hotel_details_wrap .hi_last{
+	border-bottom: 0px ;
+}
+.ri_info .rii_last{
+	border-bottom: 1px solid #8e8e8e;
+}
+/********************************** 下部内容 ****************************/
+
+/* 分页 */
+.content .pagination{
+	width: 600px;
+	height:38px;
+	margin: 0 auto;/* ?????????? */
+	padding: 1px 0px;
+}
+.page_div {
+    /* margin-top: 20px; */
+    margin-bottom: 20px;
+    font-size: 15px;
+    font-family: "microsoft yahei";
+    color: #666666;
+    margin-right: 10px;
+    padding-left: 20px;
+    box-sizing: border-box;
+}
+
+/*
+ * 页数按钮样式
+ */
+
+.page_div a {
+    min-width: 30px;
+    height: 28px;
+    border: 1px solid #dce0e0!important;
+    text-align: center;
+    margin: 0 4px;
+    cursor: pointer;
+    line-height: 28px;
+    color: #666666;
+    font-size: 13px;
+    display: inline-block;
+}
+
+#firstPage,
+#lastPage {
+    width: 50px;
+    color: #0073A9;
+    border: 1px solid #0073A9!important;
+}
+
+#prePage,
+#nextPage {
+    width: 70px;
+    color: #0073A9;
+    border: 1px solid #0073A9!important;
+}
+
+.page_div .current {
+    background-color: #0073A9;
+    border-color: #0073A9;
+    color: #FFFFFF;
+}
+
+.totalPages {
+    margin: 0 10px;
+}
+
+.totalPages span,
+.totalSize span {
+    color: #0073A9;
+    margin: 0 5px;
+}
+
+#page{
+	margin:0 auto 20px;
+}

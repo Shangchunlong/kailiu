@@ -1,0 +1,730 @@
+/****************************** 内容块 *****************************/
+.content{
+	
+	width: 1000px;
+	margin: 0 auto 30px;
+	overflow: hidden;
+	/* padding-top: 28px; */
+}
+
+/****************************** 上内容块 *****************************/
+.conup{
+	width: 1000px;
+	overflow: hidden;
+	border-bottom: 1px solid #898989;
+}
+	/*********************************** 上内容标题块 **************************/
+	.tit{
+	width: 1000px;
+	overflow: hidden;
+	margin-bottom: 15px;
+	}
+	.tit h3{
+		float: left;
+		height: 39px;
+		line-height: 39px;
+		font-size: 28px;
+		margin-right: 19px;
+		margin-left: 8px;
+		color: #3c3c3c;
+
+	}
+	.tit div{
+		float: left;
+		height: 29px;
+		margin-top:10px;
+	}
+	.tit img{
+		/* float: left; */
+
+	}
+
+	/* 喜欢评论 */
+	.like{
+		float: right;
+		overflow: hidden;
+	}
+	.like div{
+		overflow: hidden;
+		float: left;
+		position: relative;
+	}
+	.like div a{
+		float: left;
+		color: #6e6e6e;
+	}
+	.like div .alllike{
+		padding-left: 24px;
+		height: 39px;
+		line-height: 58px;
+		padding-right: 8px;
+
+	}
+	.like div .amount{
+		height: 39px;
+		line-height: 58px;
+		padding-right: 23px;
+	}
+	.like .img{
+		height: 16px;
+		width: 16px;
+		position: absolute;
+		top: 20px;
+		left: 0px;
+	}
+  /*********************************** 上内容左图片 **************************/
+	.conup .leftimg{
+		float: left;
+		width: 558px;
+		height: 390px;
+	}
+/************************************** 上内容右内容块 ***********************/
+	.conup .titright{
+		float: left;
+		margin-left:28px ;
+		height: 390px;
+		overflow: hidden;
+	}
+		/* 格式 */
+	.titright div{
+		padding-top: 18px;
+		padding-bottom: 10px;
+		border-bottom: 1px dashed #898989;
+		border-top: 1px dashed #898989;
+	}
+	.content .conup .titright .address{
+		overflow: hidden;
+		height: 16px;
+		line-height: 16px;
+	}
+	.content .conup .address .add{
+		width: 68px;
+		height: 16px;
+		line-height: 16px;
+		font-size: 14px;
+		float: left;
+		word-spacing: 23px;
+		/* text-align: justify; */
+	}
+	/* 酒店特色 */
+	.titright .hotel{
+		overflow: hidden;
+		border-top: none;
+
+	}
+	.hotel p{
+		float: left;
+		width: 282px;
+		margin-left: 14px;
+		line-height: 20px;
+	}
+	.hotel .hotelname{
+		float: left;
+		word-spacing: none;
+		font-size: 14px;
+		width: 70px;
+	}
+	.titright .special{
+		height: 139px;
+		padding-bottom: 0px;
+	}
+	.content .conup .address p{
+		width: 332px;
+		float: left;
+		height: 16x;
+		line-height: 16px;
+		font-size: 14px;
+		margin-left: 14px;
+	}
+
+	.titright .hotelbottom{
+		overflow: hidden;
+		border-top:none;
+	}
+	.titright .hotelbottom h3{
+		width: 68px;
+		height: 21px;
+		line-height: 21px;
+		font-size: 14px;
+		float: left;
+		word-spacing: 23px;
+	}
+	.titright .hotelbottom p{
+		padding-left: 28px;
+		float: left;
+		width: 78px;
+		height: 21px;
+		line-height: 21px;
+		position: relative;
+		margin-left: 14px;
+	}
+	.titright .hotelbottom .ppp{
+		margin-left: 0px;
+	}
+	.titright .hotelbottom p img{
+		position: absolute;
+		left: 0px;
+		top: 0px;
+	}
+/* 点赞评论 */
+	.titright .dianzanpinglun{
+		width: 413px;
+		overflow: hidden;
+		border: none;
+		padding: 0;
+	}
+	.titright .dianzanpinglun .like{
+		height: 36px;
+		border: none;
+		padding: 0;
+	}
+	.titright .dianzanpinglun .verylike{
+		color:#176fbb;
+		padding-right: 65px;
+	}
+	.titright .dianzanpinglun .like .img{
+		top: 3px;
+	}
+	.titright .dianzanpinglun .like div{
+		border: none;
+		padding: 0;
+		overflow: hidden;
+	}
+	.titright .dianzanpinglun .like div a{
+		height: 36px;
+		line-height: 36px;
+		padding-top: 0 ;
+		padding-bottom: 0 ;
+		float: left;
+	}
+/***************************************** 上下图片 *********************************/
+
+#imgwrapout{
+	width: 1000px;
+	padding-bottom: 20px;
+	padding-top: 20px;
+	clear: left;
+	overflow: hidden;
+	position: relative;
+}
+#imgwrapout .buu1{
+	width: 36px;
+	height: 36px;
+	position: absolute;
+	left:21px ;
+	top:83px ;
+}
+#imgwrapout .buu2{
+	width: 36px;
+	height: 36px;
+	position: absolute;
+	right:21px ;
+	top:83px ;
+}
+
+#imgwrapout .buu1 img,#imgwrapout .buu2 img{
+	width: 36px;
+	height: 36px;
+}
+
+
+#imgwrapin{
+	width: 1000px;
+	clear: left;
+	overflow: hidden;
+}
+
+#imgwrapin .roll{
+	overflow: hidden;
+	width: 5000px;
+}
+
+.imgbottom img{
+	float: left;
+	width: 230px;
+	height: 160px;
+	margin-right:26px ;
+	
+}
+
+
+
+/******************************** 左内容块 **************************/
+.content .conleft{
+	
+	width: 701px;
+	border-bottom: 1px  solid #898989;
+	padding-bottom: 23px;
+	float: left;
+}
+
+ /********************************** 标准间 ***********************/
+.conleft .normalhouse{
+	padding-top: 28px;
+	overflow: hidden;
+	border-bottom: 1px solid #898989;
+} 
+.conleft .normalhouse .cap div,.conleft .normalhouse .capcon div{
+	float: left;
+
+}
+.conleft .normalhouse .cap{
+	overflow: hidden;
+}
+.conleft .normalhouse .capcon{
+	overflow: hidden;
+}
+.conleft .normalhouse .cap .div11{
+	padding-left: 19px;
+	width: 231px;
+	height: 38px;
+	float: left;
+	line-height: 38px;
+	font-size: 18px;
+	background-color: #ffa000;
+	color: white;
+	border-right: 1px solid #F8F8FF;
+}
+.conleft .normalhouse .cap .div22{
+	width: 111px;
+	height: 38px;
+	overflow: left;
+	line-height: 38px;
+	font-size: 16px;
+	background-color: #ffa000;
+	color: white;
+	border-right: 1px solid #F8F8FF;
+	text-align: center;
+}
+.conleft .normalhouse .cap .div33{
+	width: 60px;
+	height: 38px;
+	overflow: left;
+	line-height: 38px;
+	font-size: 16px;
+	background-color: #ffa000;
+	color: white;
+	border-right: 1px solid #F8F8FF;
+	text-align: center;
+}
+.conleft .normalhouse .cap .div44{
+	width: 155px;
+	height: 38px;
+	overflow: left;
+	line-height: 38px;
+	font-size: 16px;
+	background-color: #ffa000;
+	color: white;
+	text-align: center;
+}
+
+
+
+.conleft .normalhouse .capcon .div11{
+	padding-left: 19px;
+	width: 231px;
+	height: 195px;
+	float: left;
+	line-height: 38px;
+	font-size: 18px;
+	background-color: #eeeeee;
+	color: white;
+	border-right: 1px solid #c8c8c8;
+	position: relative;
+	border-bottom: 1px solid #c8c8c8;
+
+}
+.conleft .normalhouse .capcon .div11 img{
+	position: absolute;
+	top: 17px;
+	left: 0px;
+}
+.conleft .normalhouse .capcon .div22{
+	width: 111px;
+	height: 195px;
+	overflow: left;
+	line-height: 38px;
+	font-size: 16px;
+	background-color: #eeeeee;
+	color: white;
+	border-right: 1px solid #c8c8c8;
+	border-bottom: 1px solid #c8c8c8;
+	text-align: center;
+}
+.conleft .normalhouse .capcon .div33{
+	width: 60px;
+	height: 195px;
+	overflow: left;
+	line-height: 38px;
+	font-size: 16px;
+	background-color: #eeeeee;
+	color: white;
+	border-right: 1px solid #c8c8c8;
+	border-bottom: 1px solid #c8c8c8;
+	text-align: center;
+}
+.conleft .normalhouse .capcon .div44{
+	width: 154px;
+	height: 195px;
+	overflow: left;
+	line-height: 38px;
+	font-size: 16px;
+	background-color: #eeeeee;
+	color: white;
+	text-align: center;
+	border-right: 1px solid #c8c8c8;
+	border-bottom: 1px solid #c8c8c8;
+}
+.capcon div .capcontent{
+	height: 14px;
+	line-height: 14px;
+	font-size: 14px;
+	margin: 78px auto 0;
+	font-weight: bold;
+	color: #3c3c3c;
+}
+.capcon div .nowprice{
+	height: 24px;
+	line-height: 24px;
+	margin:57px auto 0;
+	font-size: 14px;
+	font-weight: bold;
+	color: #3c3c3c;
+}
+.capcon div .nowprice span{
+	color: #cc0000;
+	font-size: 24px;
+}
+.capcon div .beforeprice{
+	height: 14px;
+	line-height: 14px;
+	margin:13px auto 0;
+	font-size: 14px;
+	font-weight: bold;
+	text-decoration:line-through ;
+	color: #6e6e6e;
+}
+/***************************** 标准间信息块 **********************/
+.conleft .normalhouse .capintro{
+	width: 680px;
+	border-right: 1px solid #c8c8c8;
+	border-left: 1px solid #c8c8c8;
+	border-bottom: 1px solid #c8c8c8;
+	padding-top: 20px;
+	padding-left: 19px;
+	padding-bottom: 10px;
+
+}
+.conleft .normalhouse .capintro p{
+	height: 14px;
+	line-height: 14px;
+	font-size: 14px;
+	margin-bottom: 10px;
+	color: #3c3c3c;
+}
+/****************************** 预定信息 **************************/
+.conleft .normalhouse .reserve{
+	overflow: hidden;
+	width: 701px;
+
+}
+.conleft .normalhouse .reserve .jinzhang{
+	float: right;
+	font-size: 12px;
+	color: #cc0000;
+	height: 55px;
+	line-height: 55px;
+	margin-left: 15px;
+}
+.conleft .normalhouse .reserve .suding{
+	margin-top: 14px;
+	width: 100px;
+	height: 25px;
+	line-height: 25px;
+	text-align: center;
+	background:  url(../imgs/imgs02/yuding_03.png) 0 0 no-repeat;
+	float: right;
+	font-size: 14px;
+	color: #ffffff;
+}
+.conleft .normalhouse .reserve .yiding{
+	float: right;
+	font-size: 12px;
+	color: #6e6e6e;
+	height: 55px;
+	line-height: 55px;
+	margin-right: 15px;
+}
+/*********************************************** 双床房信息 *********************************************/
+.doublehouse .cap div{
+	background-color: #ffa000;
+} 
+#gaibeijing{
+	background: none;
+} 
+
+/************************************************* 评论区 *********************************************/
+.conleft .commentspace{
+	margin-top: 20px;
+	width: 701px;
+	overflow: hidden;
+	margin-bottom: 20px;
+}
+.conleft .commentspace .youji{
+	width: 682px;
+	height: 38px;
+	padding-left: 19px;
+	background: #ffa000;
+	margin-bottom: 20px;
+}
+.conleft .commentspace .youji p{
+	width: 100px;
+	height: 38px;
+	line-height: 38px;
+	color: white;
+	font-size: 18px;
+}
+/* 评论快 */
+.pinglunkuai{
+	overflow: hidden;
+	margin-top: 20px;
+	width:700px;
+}
+.pinglunkuai .lkuai{
+	float: left;
+	width: 110px;
+	height: 109px;
+}
+.lkuai .imgs{
+	width: 70px;
+	height: 70px;
+	margin: 0 auto 20px;
+}
+.lkuai p{
+	text-align: center;
+	height: 14px;
+	line-height: 14px;
+	color: #3c3c3c;
+}
+
+.pinglunkuai .rkuai{
+	float: left;
+/* 	width: 570px; */
+	height: 109px;
+	/* border: 1px solid #6e6e6e; */
+	position: relative;
+}
+.rkuai .denglukuai{
+	width: 589px;
+	height: 98px;
+	border: 1px solid #6e6e6e;
+	position: absolute;
+	left: 0;
+	top: 0;
+	background-color: white;
+
+}
+/*************************** 直接登录和注册登录 **************************/
+.rkuai .denglukuai .zhucedenglu{
+	height: 14px;
+	line-height: 14px;
+	width: 305px;
+	margin: 0 auto;
+	color: #6e6e6e;
+	margin-top: 30px;
+	margin-bottom: 21px;
+}
+.rkuai .denglukuai .zhucedenglu a{
+	height: 14px;
+	line-height: 14px;
+	color: #6e6e6e;
+	font-size: 14px;
+}
+.rkuai .denglukuai .zhijiedenglu{
+	height: 14px;
+	line-height: 14px;
+	width: 115px;
+	margin: 0 auto;
+}
+.rkuai .denglukuai .zhijiedenglu a{
+	height: 14px;
+	line-height: 14px;
+	color: #ffa000;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+/*************************************** 评论按钮 ******************************/
+.commentspace .pinglunbutton{
+	height: 60px;
+	width: 701px;
+	overflow: hidden;
+
+}
+.commentspace .pinglunbutton p{
+
+	float: right;
+	position: relative;
+}
+
+.commentspace .pinglunbutton p a{
+	line-height: 25px;
+	width: 80px;
+	height: 25px;
+	background:  url(../imgs/imgs02/pinglunanniu_03.png) 0 0 no-repeat;
+	position: absolute;
+	right: 0px;
+	top: 32px;
+	text-align: center;
+	letter-spacing: 8px;
+	color: white;
+	font-weight: bold;
+}
+
+/********************************************* 评论内容 ******************************/
+.pinglunkuai .rkuai .neirong{
+	width: 589px;
+	height: 78px;
+
+}
+
+.pinglunkuai .rkuai .shijian{
+	border-bottom: 1px dashed #6e6e6e ;
+	border-top: 1px dashed #6e6e6e ;
+	color: #6e6e6e;
+	height: 25px;
+	width: 589px;
+	overflow: hidden;
+}
+.pinglunkuai .rkuai .shijian .time{
+	float: left;
+	font-size: 14px;
+	height: 25px;
+	line-height: 25px;
+}
+
+.shijian .like div a{
+	height: 25px;
+	line-height: 25px;
+	margin-left:10px ;
+}
+.rkuai .shijian .like div{
+	margin-left:5px ;
+}
+.shijian .like div a img{
+	position: relative;
+	left: 0px;
+	top: -17px;
+
+
+}
+
+.shijian .more{
+	height: 25px;
+	line-height: 25px;
+	float: right;
+	margin-left: 20px;
+	color: #176fbb;
+}
+
+/***************************** 右侧内容 ******************************/
+.conright{
+	margin-top: 28px;
+	width: 270px;
+	float: right;
+
+}
+.conright .xiangguantuijian{
+	width: 250px;
+	height: 38px;
+	line-height: 38px;
+	padding-left: 20px;
+	color: white;
+	font-size: 18px;
+	background: #ffa000;
+	
+}
+
+.conright .neirong{
+	width: 268px;
+	border: 1px solid #6e6e6e;
+	padding: 0 0 20px;
+	margin-top: 20px;
+	overflow: hidden;
+}
+.conright .neirong .tuijianneirong{
+	margin:0 auto ;
+	width: 228px;
+	height: 58px;
+	overflow: hidden;
+	margin-top: 30px;
+}
+.conright .neirong .neirongfst{
+	margin-top: 0;
+}
+.conright .neirong .tuijianneirong .limg{
+	/* float: left; */
+	width: 83px;
+	height: 58px;
+}
+.conright .neirong .tuijianneirong .jiudiandengji{
+	width: 132px;
+	float: right;
+}
+.conright .neirong .tuijianneirong .jiudiandengji a{
+	font-size: 12px;
+	color: #3c3c3c;
+	margin-bottom: 7px;
+}
+/* .conright .neirong .tuijianneirong .jiudiandengji img{
+	height:10px ;
+	margin-bottom: 14px;
+	width: 70px;
+}
+} */
+.conright .neirong .tuijianneirong .jiudiandengji .mostlike{
+	width: 132px;
+	overflow: hidden;
+}
+.conright .neirong .tuijianneirong .jiudiandengji .mostlike .zuo{
+	float: left;
+	position: relative;
+	padding-left: 18px;
+	font-size: 10px;
+	height: 12px;
+	line-height: 9px;
+	color: #6e6e6e;
+}
+.conright .neirong .tuijianneirong .jiudiandengji .mostlike .you{
+	float: right;
+	position: relative;
+	padding-left: 18px;
+	font-size: 10px;
+	height: 12px;
+	line-height: 9px;
+	color: #6e6e6e;
+}
+.conright .neirong .tuijianneirong .jiudiandengji .mostlike .zuo img{
+	position: absolute;
+	left: 0;
+	top: 0;
+	margin-bottom: 0;
+	width: 10px;
+	height: 10px;
+}
+.conright .neirong .tuijianneirong .jiudiandengji .mostlike .you img{
+	position: absolute;
+	left: 0;
+	top: 0;
+	margin-bottom: 0;
+	width: 10px;
+	height: 10px;
+}
+
+
+
+/***************************** 图片滚动 ******************************/
+
+
+
+
